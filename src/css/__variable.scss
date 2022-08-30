@@ -1,0 +1,47 @@
+/* ==== color styles ==== */ 
+
+$color-primary : #000000;
+$color-secondary : #7C8DB5;
+$color-white : white;
+$color-indigo : #347AE2;
+$color-red : #FF3B30;
+$color-green : #34C759;
+$color-orange : #FF9500;
+
+/* ==== color styles ==== */ 
+
+
+/* ==== font styles ==== */ 
+
+$font-large : 28px;
+$font-title : 20px;
+$font-line : 16px;
+$font-fontnote : 14px;
+$font-small : 12px;
+
+
+
+/* ==== font styles ==== */ 
+
+/* ==== border =====*/
+
+$color-border : #E6EDFF;
+
+
+.font__large{
+    font-size: $font-large;
+}
+
+.font__para{
+    font-size: $font-line;
+    color: $color-secondary;
+}
+
+.font__small{
+    font-size: $font-small;
+}
+
+
+
+
+

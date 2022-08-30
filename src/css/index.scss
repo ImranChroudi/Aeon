@@ -1,0 +1,254 @@
+@import './_variable';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+
+}
+
+li{
+    list-style: none;
+}
+
+p,ul,li,select,i{
+    margin: 0;
+    outline: none;
+    border : none;
+    cursor: pointer;
+}
+
+
+
+
+
+i{
+    cursor: pointer;
+}
+
+.f-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* style icon positive */
+.bx-left-down-arrow-circle{
+    color: $color-red;
+}
+
+/* style icon negative */
+.bx-left-top-arrow-circle{
+    color: $color-green;
+}
+
+
+
+
+body {
+    background-color: white;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  /* style section */
+  
+  
+  /* style container */
+  
+  .container{
+      width: 90% !important;
+      min-height: 100vh;
+      position: relative;
+  }
+  
+  /* style nav left */
+  
+  /* style logo */
+  
+  .title__logo{
+      font-size: 20px;
+  }
+
+
+  /* === nav === */
+
+  nav{
+     height: 100vh;
+     position: fixed;
+     border-right: 1px solid $color-border;
+     padding-right: 20px;
+  }
+
+  /* style menu top */
+
+  .menu__top, .menu__bottom{
+     margin-top: 72px;
+     width: 192px;
+     ul{
+        #active{
+            color: $color-indigo;
+            i{
+                color: $color-indigo;
+            }
+        }
+        li{
+            gap: 12px;
+            font-size: $font-line;
+            color: $color-secondary;
+            margin-bottom: 14px;
+            cursor: pointer;
+            i{
+                color: $color-secondary;
+            }
+            span, i:nth-child(2){
+                margin-left: auto;
+            }
+
+            span{
+                width: 18px;
+                height: 18px;
+                background-color: $color-red;
+                
+            }
+            
+        }
+     }
+  }
+
+  /* style menu bottom */
+
+  .menu__bottom{
+    margin-top: 306px;
+    ul li:nth-last-child(1){
+        color: $color-red !important;
+        i{
+            color: $color-red;
+        }
+    }
+  }
+
+
+  /* style Section right */
+
+  .section__right{
+     position: absolute;
+     right: 0;
+     min-height: 100vh;
+
+     
+     .notification{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 5px;
+            aspect-ratio: 1/1;
+            background-color: $color-red;
+            border-radius: 50%;
+            right: -5px;
+            top: -5px;
+        }
+     }
+
+     .cards{
+        border:  1px solid $color-border;
+        padding: 20px;
+        border-radius: 15px;
+        .card{
+            border: none;
+            border-right: 1px solid $color-border;
+            .icon__card{
+                height: max-content;
+                border-radius: 5px;
+                box-shadow: 0px 2px 10px rgba(124, 141, 181, 0.12);
+
+                i{
+                    color: $color-indigo;
+                }
+            }
+        }
+     }
+     
+
+  }
+
+
+/* style section charts */
+
+.section__charts{
+    height: 344px;
+    .chart{
+        border-radius: 15px;
+        border: 1px solid $color-border;
+        .element{
+            position: relative;
+            &::before{
+                position: absolute;
+                content: '';
+                left: -10px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                padding: 0;
+                background-color: $color-secondary;
+            }
+        }
+        .on{
+            &::before{
+                background-color: $color-green;
+            }
+        }
+
+        .tr{
+            &::before{
+                background-color: $color-indigo;
+            }
+        }
+
+        
+    }
+    
+}
+
+/* ====  style section table orders list === */ 
+
+.table__orders__list{
+    border-radius : 15px;
+    border: 1px solid $color-border;
+    
+tr{
+    padding: 20px 0;
+    height: 55px;
+
+    width: 100%;
+    justify-content: space-between;
+    th i{
+        opacity: 0.8;
+        color: $color-secondary;
+        margin-left: 5px;
+    }
+}
+
+.action{
+    position: relative;
+    .bx-dots-horizontal-rounded{
+        font-size:1.2rem;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+    
+    }
+}
+
+}

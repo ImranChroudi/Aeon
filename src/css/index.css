@@ -1,0 +1,262 @@
+/* ==== color styles ==== */
+/* ==== color styles ==== */
+/* ==== font styles ==== */
+/* ==== font styles ==== */
+/* ==== border =====*/
+.font__large {
+  font-size: 28px;
+}
+
+.font__para {
+  font-size: 16px;
+  color: #7C8DB5;
+}
+
+.font__small {
+  font-size: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+li {
+  list-style: none;
+}
+
+p, ul, li, select, i {
+  margin: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
+}
+
+.f-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* style icon positive */
+.bx-left-down-arrow-circle {
+  color: #FF3B30;
+}
+
+/* style icon negative */
+.bx-left-top-arrow-circle {
+  color: #34C759;
+}
+
+body {
+  background-color: white;
+}
+
+li {
+  list-style: none;
+}
+
+/* style section */
+/* style container */
+.container {
+  width: 90% !important;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* style nav left */
+/* style logo */
+.title__logo {
+  font-size: 20px;
+}
+
+/* === nav === */
+nav {
+  height: 100vh;
+  position: fixed;
+  border-right: 1px solid #E6EDFF;
+  padding-right: 20px;
+}
+
+/* style menu top */
+.menu__top, .menu__bottom {
+  margin-top: 72px;
+  width: 192px;
+}
+
+.menu__top ul #active, .menu__bottom ul #active {
+  color: #347AE2;
+}
+
+.menu__top ul #active i, .menu__bottom ul #active i {
+  color: #347AE2;
+}
+
+.menu__top ul li, .menu__bottom ul li {
+  gap: 12px;
+  font-size: 16px;
+  color: #7C8DB5;
+  margin-bottom: 14px;
+  cursor: pointer;
+}
+
+.menu__top ul li i, .menu__bottom ul li i {
+  color: #7C8DB5;
+}
+
+.menu__top ul li span, .menu__top ul li i:nth-child(2), .menu__bottom ul li span, .menu__bottom ul li i:nth-child(2) {
+  margin-left: auto;
+}
+
+.menu__top ul li span, .menu__bottom ul li span {
+  width: 18px;
+  height: 18px;
+  background-color: #FF3B30;
+}
+
+/* style menu bottom */
+.menu__bottom {
+  margin-top: 306px;
+}
+
+.menu__bottom ul li:nth-last-child(1) {
+  color: #FF3B30 !important;
+}
+
+.menu__bottom ul li:nth-last-child(1) i {
+  color: #FF3B30;
+}
+
+/* style Section right */
+.section__right {
+  position: absolute;
+  right: 0;
+  min-height: 100vh;
+}
+
+.section__right .notification {
+  position: relative;
+}
+
+.section__right .notification::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  aspect-ratio: 1/1;
+  background-color: #FF3B30;
+  border-radius: 50%;
+  right: -5px;
+  top: -5px;
+}
+
+.section__right .cards {
+  border: 1px solid #E6EDFF;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.section__right .cards .card {
+  border: none;
+  border-right: 1px solid #E6EDFF;
+}
+
+.section__right .cards .card .icon__card {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 10px rgba(124, 141, 181, 0.12);
+          box-shadow: 0px 2px 10px rgba(124, 141, 181, 0.12);
+}
+
+.section__right .cards .card .icon__card i {
+  color: #347AE2;
+}
+
+/* style section charts */
+.section__charts {
+  height: 344px;
+}
+
+.section__charts .chart {
+  border-radius: 15px;
+  border: 1px solid #E6EDFF;
+}
+
+.section__charts .chart .element {
+  position: relative;
+}
+
+.section__charts .chart .element::before {
+  position: absolute;
+  content: '';
+  left: -10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  padding: 0;
+  background-color: #7C8DB5;
+}
+
+.section__charts .chart .on::before {
+  background-color: #34C759;
+}
+
+.section__charts .chart .tr::before {
+  background-color: #347AE2;
+}
+
+/* ====  style section table orders list === */
+.table__orders__list {
+  border-radius: 15px;
+  border: 1px solid #E6EDFF;
+}
+
+.table__orders__list tr {
+  padding: 20px 0;
+  height: 55px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.table__orders__list tr th i {
+  opacity: 0.8;
+  color: #7C8DB5;
+  margin-left: 5px;
+}
+
+.table__orders__list .action {
+  position: relative;
+}
+
+.table__orders__list .action .bx-dots-horizontal-rounded {
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=index.css.map */
