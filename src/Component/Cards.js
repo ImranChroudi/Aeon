@@ -25,7 +25,7 @@ const MenuCards = [
   {
 
    number : 3589,
- total : 'total users',
+    total : 'total users',
     augmonte : '2.1',
     average : '+0.49% this week',
    iconNegative : <i class='bx bx-left-down-arrow-circle'></i>,
