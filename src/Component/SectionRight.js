@@ -6,7 +6,7 @@ import OrderList from './OrderList';
 
 
 
-const SectionRight = () => {
+const Overview = () => {
   return (
     <div className='w-75 section__right'>
          <div className='container__section__right'>
@@ -19,4 +19,4 @@ const SectionRight = () => {
   )
 }
 
-export default SectionRight
+export default Overview
