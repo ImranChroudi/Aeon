@@ -1,5 +1,5 @@
 import React, { Component , useState } from 'react'
-import SectionRight from './Component/SectionRight'
+import Overview from './Component/Overview'
 import logo from './images/Iconlogo.png'
 import NavLeft from './Component/NavLeft'
 
@@ -18,7 +18,7 @@ const App = ()=>{
    <section className='section pt-3'>
         <div className='container pt-3 d-flex'>
            <NavLeft handleClick={handleClick} itemClickey={itemClickey}/>
-           <SectionRight />
+           <Overview />
         </div>
    </section>
    )
